@@ -1,0 +1,177 @@
+﻿body * { font-family: Roboto, Helvetica, Arial, sans-serif !important }
+
+header {
+    background-color: #2962ff;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+    height: 62px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 8
+}
+
+#top-content {
+    background-image: url(../images/top-image.jpg);
+    background-position: left 0;
+    height: 257px
+}
+
+#top-content-mask {
+    background-color: #5162d3;
+    height: 257px;
+    opacity: .79;
+    position: absolute;
+    top: 62px;
+    width: 100%
+}
+
+body {
+    background: #F5F5F5;
+    color: #455A64;
+    padding-top: 62px
+}
+
+#app-content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -140px;
+    max-width: initial;
+    position: absolute;
+    width: 100%
+}
+
+#mail-content {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    padding: 0
+}
+
+.mail {
+    align-items: center;
+    display: flex;
+    padding: 14px 20px 0 23px
+}
+
+.selected-mail { color: #90a4ae; }
+
+.mail-items {
+    border-bottom: thin solid #eceff1;
+    margin-left: 23px;
+    padding-bottom: 3px
+}
+
+.mail-items div.mail-status:last-child {
+    float: right;
+    margin: 0;
+    text-align: right;
+}
+
+.mail-items > div { float: left }
+
+.mail-preview {
+    font-size: 14px;
+    max-height: 68px;
+    max-width: 65%;
+    overflow: hidden
+}
+
+.mail-status {
+    font-size: 14px;
+    height: 72px;
+    margin-left: 50px;
+    padding-top: 1px
+}
+
+.user-send {
+    font-size: 15px;
+    font-weight: 600
+}
+
+.send-detail {
+    align-items: center;
+    background: #eceff1;
+    border-radius: 50%;
+    display: flex;
+    font-size: 13px;
+    height: 20px;
+    justify-content: center;
+    width: 20px
+}
+
+.bottom-status {
+    bottom: -20px;
+    position: relative
+}
+
+.mail-checker {
+    background-size: 21px auto;
+    height: 20px;
+    width: 20px
+}
+
+.star-mark { background-image: url(../images/star.svg) }
+
+.label-mark { background-image: url(../images/label.svg) }
+
+.star-mark-border { background-image: url(../images/star_border.svg) }
+
+.label-mark-outline { background-image: url(../images/label_outline.svg) }
+
+.attach {
+    background-color: #fff !important;
+    background-image: url(../images/attachment.svg);
+    background-size: 21px auto
+}
+
+.tabs-title a span {
+    background-position: center center;
+    background-size: 22px auto;
+    display: block;
+    height: 22px;
+    position: absolute;
+    top: 18px;
+    width: 22px
+}
+
+.primary-tab-ico { background-image: url(../images/move_to_inbox_gray.svg) }
+
+.social-tab-ico { background-image: url(../images/group_gray.svg) }
+
+.promotion-tab-ico { background-image: url(../images/local_offer_gray.svg) }
+
+.updates-tab-ico { background-image: url(../images/info_gray.svg) }
+
+.forum-tab-ico { background-image: url(../images/forum_gray.svg) }
+
+.circle {
+    align-items: center;
+    background: #ea80fc none repeat scroll 0 0;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    font-size: 23px;
+    font-weight: 100;
+    height: 55px;
+    justify-content: center;
+    width: 55px;
+}
+
+.avatar {
+    background-position: center center;
+    background-size: 55px auto;
+    height: 55px;
+    width: 55px;
+}
+
+.av_a {
+    background-image: url(../images/av_1.png);
+}
+
+.av_b {
+    background-image: url(../images/av_2.png);
+}
+
+.av_c {
+    background-image: url(../images/av_3.png);
+}

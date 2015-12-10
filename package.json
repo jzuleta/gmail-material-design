@@ -1,0 +1,24 @@
+{
+  "name": "gmail-material-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jzuleta/gmail-material-design.git"
+  },
+  "keywords": [
+    "gmail",
+    "material",
+    "design"
+  ],
+  "author": "Jairo Zuleta Gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jzuleta/gmail-material-design/issues"
+  },
+  "homepage": "https://github.com/jzuleta/gmail-material-design#readme"
+}

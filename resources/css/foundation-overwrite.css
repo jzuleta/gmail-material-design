@@ -1,0 +1,15 @@
+﻿.tabs { border-bottom: 1px solid #eceff1; }
+
+.tabs-title {
+    border-right: thin solid #eceff1;
+    width: 20%;
+}
+
+.tabs-title > a {
+    color: #546e7a;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tabs-title > a:hover, .tabs-title > a:focus, .tabs-title > a[aria-selected="true"] {background-color: white; border-bottom: 3px solid #90a4ae; }
