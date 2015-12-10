@@ -1,13 +1,44 @@
 ﻿body * { font-family: Roboto, Helvetica, Arial, sans-serif !important }
 
 header {
-    background-color: #2962ff;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+     background-color: #2962ff;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
     height: 62px;
+    padding-top: 15px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 8
+    z-index: 8;
+}
+
+#top-logo {
+     background-image: url("../images/google_logo.svg");
+    background-repeat: no-repeat;
+    background-size: 100px auto;
+    float: left;
+    height: 35px;
+    margin-left: 40px;
+    width: 100px;
+}
+
+#top-actions {
+    float: right;
+    margin-top: 2px;
+}
+.chat-ico { background-image: url(../images/chat_bubble_outline.svg); }
+
+.app-ico { background-image: url(../images/apps.svg); }
+
+.notification-ico { background-image: url(../images/notifications_none.svg); }
+
+.top-buttons {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 28px auto;
+    float: right;
+    height: 30px;
+    margin-right: 20px;
+    width: 30px;
 }
 
 #top-content {
@@ -41,10 +72,10 @@ body {
 }
 
 #mail-content {
-    background: #fff;
+    background: #fff none repeat scroll 0 0;
     border-radius: 2px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-    padding: 0
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    padding: 0 0 10px;
 }
 
 .mail {
@@ -66,6 +97,8 @@ body {
     margin: 0;
     text-align: right;
 }
+
+#mail-content div.mail:last-child .mail-items { border-bottom: none; }
 
 .mail-items > div { float: left }
 
@@ -164,14 +197,59 @@ body {
     width: 55px;
 }
 
-.av_a {
-    background-image: url(../images/av_1.png);
+.av_a { background-image: url(../images/av_1.png); }
+
+.av_b { background-image: url(../images/av_2.png); }
+
+.av_c { background-image: url(../images/av_3.png); }
+
+#profile-content {
+    height: 140px;
+    margin-bottom: 25px;
 }
 
-.av_b {
-    background-image: url(../images/av_2.png);
+#left-menu li {
+    align-items: center;
+    display: flex;
+    font-size: 17px;
+    height: 60px;
+    list-style: outside none none;
+    padding-left: 10px;
+    padding-right: 50px;
 }
 
-.av_c {
-    background-image: url(../images/av_3.png);
+.menu-image {
+    height: 25px;
+    margin-right: 35px;
+    width: 30px;
 }
+
+.menu-action {
+    border-bottom: thin solid #e2e6e8;
+    height: 100%;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.new-items { font-weight: 600; }
+
+.menu-tag {
+    float: right;
+    margin-right: 5px;
+}
+
+.inbox-ico { background-image: url(../images/move_to_inbox.svg); }
+
+.starred-ico { background-image: url(../images/star_rate.svg); }
+
+.important-ico { background-image: url(../images/important.svg); }
+
+.sent-ico { background-image: url(../images/send.svg); }
+
+.draft-ico { background-image: url(../images/drafts.svg); }
+
+.spam-ico { background-image: url(../images/spam.svg); }
+
+.trash-ico { background-image: url(../images/trash.svg); }
+
+.circle-ico { background-image: url(../images/circle.svg); }

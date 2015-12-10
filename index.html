@@ -6,7 +6,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Foundation 5</title>
+    <title>Gmail Redesign</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css"/>
     <link rel="stylesheet" href="vendors/foundation/css/foundation.css">
     <link rel="stylesheet" href="resources/css/app.css">
@@ -14,12 +14,34 @@
 </head>
 <body>
 <header>
-
+    <div id="top-logo"></div>
+    <div id="top-actions">
+        <div class="top-buttons chat-ico"></div>
+        <div class="top-buttons app-ico"></div>
+        <div class="top-buttons notification-ico"></div>
+    </div>
+    <div class="row">
+        <div class="small-6 small-centered columns">
+            <input type="text">
+        </div>
+    </div>
 </header>
 <section id="top-content"></section>
 <section id="top-content-mask"></section>
 <div id="app-content" class="row">
-    <div id="left-menu" class="large-3 columns"></div>
+    <div id="left-menu" class="large-3 columns hide-for-medium-only hide-for-small-only">
+        <div id="profile-content"></div>
+        <ul id="menu-content">
+            <li><span class="menu-image inbox-ico"></span><span class="menu-action new-items">Inbox<span class="menu-tag">3</span></span></li>
+            <li><span class="menu-image starred-ico"></span><span class="menu-action">Starred</span></li>
+            <li><span class="menu-image important-ico"></span><span class="menu-action">Important</span></li>
+            <li><span class="menu-image sent-ico"></span><span class="menu-action">Sent Mail</span></li>
+            <li><span class="menu-image draft-ico"></span><span class="menu-action new-items">Drafts<span class="menu-tag">2</span></span></li>
+            <li><span class="menu-image spam-ico"></span><span class="menu-action new-items">Spam<span class="menu-tag">11</span></span></li>
+            <li><span class="menu-image trash-ico"></span><span class="menu-action">Trash</span></li>
+            <li><span class="menu-image circle-ico"></span><span class="menu-action">Circles</span></li>
+        </ul>
+    </div>
     <div id="mail-content" class="large-9 columns">
         <ul class="tabs" data-tabs>
             <li class="tabs-title is-active">
