@@ -1,35 +1,36 @@
 ﻿body * { font-family: Roboto, Helvetica, Arial, sans-serif !important }
 
 header {
-     background-color: #2962ff;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    background-color: #2962ff;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
     height: 62px;
     padding-top: 15px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 8;
+    z-index: 8
 }
 
 #top-logo {
-     background-image: url("../images/google_logo.svg");
+    background-image: url(../images/google_logo.svg);
     background-repeat: no-repeat;
     background-size: 100px auto;
     float: left;
     height: 35px;
     margin-left: 40px;
-    width: 100px;
+    width: 100px
 }
 
 #top-actions {
     float: right;
-    margin-top: 2px;
+    margin-top: 2px
 }
-.chat-ico { background-image: url(../images/chat_bubble_outline.svg); }
 
-.app-ico { background-image: url(../images/apps.svg); }
+.chat-ico { background-image: url(../images/chat_bubble_outline.svg) }
 
-.notification-ico { background-image: url(../images/notifications_none.svg); }
+.app-ico { background-image: url(../images/apps.svg) }
+
+.notification-ico { background-image: url(../images/notifications_none.svg) }
 
 .top-buttons {
     background-position: center center;
@@ -37,8 +38,8 @@ header {
     background-size: 28px auto;
     float: right;
     height: 30px;
-    margin-right: 20px;
-    width: 30px;
+    margin-right: 18px;
+    width: 30px
 }
 
 #top-content {
@@ -65,17 +66,38 @@ body {
 #app-content {
     margin-left: auto;
     margin-right: auto;
-    margin-top: -140px;
+    margin-top: -200px;
     max-width: initial;
     position: absolute;
-    width: 100%
+    width: 100%;
 }
 
 #mail-content {
-    background: #fff none repeat scroll 0 0;
+    padding: 0 40px;
+}
+
+#mails {
+    background: #fff;
     border-radius: 2px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    padding: 0 0 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    padding: 0 0 10px
+}
+
+#foot-info {
+    color: #919ea4;
+    font-size: 15px;
+    margin-bottom: 16px;
+    margin-top: 25px;
+    padding: 0;
+}
+
+#foot-info .large-4.columns { padding: 0 }
+
+#space-button {
+    float: right;
+    font-size: 14px;
+    margin-top: 1px;
+    text-transform: uppercase
 }
 
 .mail {
@@ -84,7 +106,7 @@ body {
     padding: 14px 20px 0 23px
 }
 
-.selected-mail { color: #90a4ae; }
+.selected-mail { color: #90a4ae }
 
 .mail-items {
     border-bottom: thin solid #eceff1;
@@ -95,10 +117,10 @@ body {
 .mail-items div.mail-status:last-child {
     float: right;
     margin: 0;
-    text-align: right;
+    text-align: right
 }
 
-#mail-content div.mail:last-child .mail-items { border-bottom: none; }
+#mail-content div.mail:last-child .mail-items { border-bottom: none }
 
 .mail-items > div { float: left }
 
@@ -161,10 +183,10 @@ body {
     background-position: center center;
     background-size: 22px auto;
     display: block;
+    float: left;
     height: 22px;
-    position: absolute;
-    top: 18px;
-    width: 22px
+    top: 0;
+    width: 22px;
 }
 
 .primary-tab-ico { background-image: url(../images/move_to_inbox_gray.svg) }
@@ -179,33 +201,34 @@ body {
 
 .circle {
     align-items: center;
-    background: #ea80fc none repeat scroll 0 0;
+    background: #ea80fc;
     border-radius: 50%;
-    color: white;
+    color: #fff;
     display: flex;
     font-size: 23px;
     font-weight: 100;
     height: 55px;
     justify-content: center;
-    width: 55px;
+    width: 55px
 }
 
 .avatar {
     background-position: center center;
     background-size: 55px auto;
     height: 55px;
-    width: 55px;
+    width: 55px
 }
 
-.av_a { background-image: url(../images/av_1.png); }
+.av_a { background-image: url(../images/av_1.png) }
 
-.av_b { background-image: url(../images/av_2.png); }
+.av_b { background-image: url(../images/av_2.png) }
 
-.av_c { background-image: url(../images/av_3.png); }
+.av_c { background-image: url(../images/av_3.png) }
 
 #profile-content {
     height: 140px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    margin-top: 60px;
 }
 
 #left-menu li {
@@ -213,43 +236,124 @@ body {
     display: flex;
     font-size: 17px;
     height: 60px;
-    list-style: outside none none;
+    list-style: none none;
     padding-left: 10px;
-    padding-right: 50px;
+    padding-right: 50px
 }
 
 .menu-image {
     height: 25px;
     margin-right: 35px;
-    width: 30px;
+    width: 30px
 }
 
 .menu-action {
     border-bottom: thin solid #e2e6e8;
     height: 100%;
     padding: 15px 0;
-    width: 100%;
+    width: 100%
 }
 
-.new-items { font-weight: 600; }
+.new-items { font-weight: 600 }
 
 .menu-tag {
     float: right;
-    margin-right: 5px;
+    margin-right: 5px
 }
 
-.inbox-ico { background-image: url(../images/move_to_inbox.svg); }
+.inbox-ico { background-image: url(../images/move_to_inbox.svg) }
 
-.starred-ico { background-image: url(../images/star_rate.svg); }
+.starred-ico { background-image: url(../images/star_rate.svg) }
 
-.important-ico { background-image: url(../images/important.svg); }
+.important-ico { background-image: url(../images/important.svg) }
 
-.sent-ico { background-image: url(../images/send.svg); }
+.sent-ico { background-image: url(../images/send.svg) }
 
-.draft-ico { background-image: url(../images/drafts.svg); }
+.draft-ico { background-image: url(../images/drafts.svg) }
 
-.spam-ico { background-image: url(../images/spam.svg); }
+.spam-ico { background-image: url(../images/spam.svg) }
 
-.trash-ico { background-image: url(../images/trash.svg); }
+.trash-ico { background-image: url(../images/trash.svg) }
 
-.circle-ico { background-image: url(../images/circle.svg); }
+.circle-ico { background-image: url(../images/circle.svg) }
+
+#others-functions {
+    margin-left: 25px;
+    margin-top: 50px;
+    padding-bottom: 16px
+}
+
+.block {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    float: left;
+    font-size: 12px;
+    height: 98px;
+    line-height: 14px;
+    margin-right: 15px;
+    text-align: center;
+    width: 98px
+}
+
+.block > span {
+    display: block;
+    padding-top: 5px
+}
+
+.back-function {
+    background-color: #2962ff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 30px auto;
+    height: 60px
+}
+
+.hangout-ico { background-image: url(../images/hangout.svg) }
+
+.chat-bubble-ico { background-image: url(../images/chat_bubble.svg) }
+
+.phone-ico { background-image: url(../images/phone.svg) }
+
+#top-buttons, .top-group { padding: 0; }
+
+.top-group { margin-bottom: 30px; }
+
+#top-buttons a span {
+    background-repeat: no-repeat;
+    background-size: 24px auto;
+    display: block;
+    height: 24px;
+    width: 24px;
+}
+
+#top-buttons .button {
+    background-color: #448aff;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    margin: 0;
+    padding: 3px 20px;
+}
+
+#top-buttons .top-group div { padding: 0; }
+
+.button-detail {
+    color: #ccd8f7;
+    margin-top: 5px;
+}
+
+.check-ico { background-image: url(../images/check_box_outline.svg); }
+
+.more-ico { background-image: url(../images/more_horiz.svg); }
+
+.refrehs-ico { background-image: url(../images/refresh.svg); }
+
+.draft-white-ico { background-image: url(../images/drafts_white.svg); }
+
+.arrow-down-ico { background-image: url(../images/arrow_drop.svg); }
+
+.arrow-back-ico { background-image: url(../images/arrow_back.svg); }
+
+.arrow-forward-ico { background-image: url(../images/arrow_forward.svg); }
+
+.arrow-settings-ico { background-image: url(../images/settings.svg); }
