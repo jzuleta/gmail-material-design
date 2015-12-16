@@ -73,7 +73,15 @@ body {
 }
 
 #mail-content {
+    min-width: 855px;
     padding: 0 40px;
+    position: absolute;
+    right: 0;
+}
+
+
+#left-menu {
+    min-width: 395px;
 }
 
 #mails {
@@ -101,9 +109,15 @@ body {
 }
 
 .mail {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
     align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    padding: 14px 20px 0 23px
+    padding: 14px 0 0 23px
 }
 
 .selected-mail { color: #90a4ae }
@@ -116,8 +130,8 @@ body {
 
 .mail-items div.mail-status:last-child {
     float: right;
-    margin: 0;
-    text-align: right
+    margin: 0 20px 0 0;
+    text-align: right;
 }
 
 #mail-content div.mail:last-child .mail-items { border-bottom: none }
@@ -201,7 +215,7 @@ body {
 
 .circle {
     align-items: center;
-    background: #ea80fc;
+    background: #ea80fc none repeat scroll 0 0;
     border-radius: 50%;
     color: #fff;
     display: flex;
@@ -209,7 +223,8 @@ body {
     font-weight: 100;
     height: 55px;
     justify-content: center;
-    width: 55px
+    padding: 0 22px;
+    width: 55px;
 }
 
 .avatar {
@@ -229,7 +244,35 @@ body {
     height: 140px;
     margin-bottom: 10px;
     margin-top: 60px;
+    padding-left: 35px;
 }
+
+#user-name {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+#user-button {
+    font-weight: 400;
+    padding-top: 8px;
+}
+
+#avatar-picture {
+    background-image: url("../images/av_0.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 105px auto;
+    border-radius: 50%;
+    float: left;
+    height: 100px;
+    margin-right: 20px;
+    width: 100px;
+}
+
+.add-ico { background-image: url(../images/add_white.svg); }
 
 #left-menu li {
     align-items: center;
@@ -319,20 +362,12 @@ body {
 
 .top-group { margin-bottom: 30px; }
 
-#top-buttons a span {
+a span {
     background-repeat: no-repeat;
     background-size: 24px auto;
     display: block;
     height: 24px;
     width: 24px;
-}
-
-#top-buttons .button {
-    background-color: #448aff;
-    border-radius: 2px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    margin: 0;
-    padding: 3px 20px;
 }
 
 #top-buttons .top-group div { padding: 0; }
@@ -341,6 +376,8 @@ body {
     color: #ccd8f7;
     margin-top: 5px;
 }
+
+.small-button { padding: 3px 8px !important; }
 
 .check-ico { background-image: url(../images/check_box_outline.svg); }
 
