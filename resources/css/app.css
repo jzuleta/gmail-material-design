@@ -26,6 +26,16 @@ header {
     margin-top: 2px
 }
 
+.input-actions {
+    background-image: url("../images/search.svg");
+    background-size: 24px auto;
+    height: 24px;
+    margin-left: 6px;
+    position: absolute;
+    top: 20px;
+    width: 24px;
+}
+
 .chat-ico { background-image: url(../images/chat_bubble_outline.svg) }
 
 .app-ico { background-image: url(../images/apps.svg) }
